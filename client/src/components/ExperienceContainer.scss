@@ -1,0 +1,42 @@
+.experience-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 750px;
+    width: 94%;
+    margin-left: 3%;
+    //margin: 20px 0;
+  
+    .container1 {
+      flex: 1;
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0 10px;
+      
+      p:first-child {
+        font-size: 2em;
+        font-weight: bold;
+        color: #007bff;
+        margin: 0;
+      }
+      
+      p:last-child {
+        font-size: 1.2em;
+        color: #666;
+        margin: 10px 0 0;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .experience-container {
+      flex-direction: column;
+      
+      .container1 {
+        margin: 10px 0;
+      }
+    }
+  }
+  

@@ -1,0 +1,213 @@
+/* src/components/CustomersGallery.css */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery-item img.lazyloaded {
+    opacity: 1;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Masonry layout styles */
+  .gallery-item:nth-child(odd) {
+    grid-row: span 2;
+  }
+  
+  .gallery-item:nth-child(even) {
+    grid-row: span 1;
+  }
+
+  // .left-arrow{
+  //   display: none;
+  // }
+  
+
+  @media (max-width: 1024px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .gallery-item {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      .gallery-item img.lazyloaded {
+        opacity: 1;
+      }
+      
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+      
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+      
+      /* Masonry layout styles */
+      .gallery-item:nth-child(odd) {
+        grid-row: span 2;
+      }
+      
+      .gallery-item:nth-child(even) {
+        grid-row: span 1;
+      }
+
+      // .left-arrow{
+      //   display: none;
+      // }
+
+  }
+
+  @media (max-width: 768px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .gallery-item {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      .gallery-item img.lazyloaded {
+        opacity: 1;
+      }
+      
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+      
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+      
+      /* Masonry layout styles */
+      .gallery-item:nth-child(odd) {
+        grid-row: span 2;
+      }
+      
+      .gallery-item:nth-child(even) {
+        grid-row: span 1;
+      }
+
+      // .left-arrow{
+      //   display: none;
+      // }
+
+  }
+
+  @media (max-width: 460px) {
+    .gallery-container {
+        display: grid;
+        overflow-x: auto;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .gallery-item {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      .gallery-item img.lazyloaded {
+        opacity: 1;
+      }
+      
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+      
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+      
+      /* Masonry layout styles */
+      .gallery-item:nth-child(odd) {
+        grid-row: span 2;
+      }
+      
+      .gallery-item:nth-child(even) {
+        grid-row: span 1;
+      }
+
+      // .left-arrow{
+      //   position: absolute;
+      //   margin-top: 300px;
+      //   margin-left: 370px;
+      //   font-weight: bold; /* This might work if the icon responds to font weight */
+      //   stroke-width: 2; /* If the icon is an SVG, this can increase the thickness */
+      //   font-size: 2em; 
+      // }
+
+  }

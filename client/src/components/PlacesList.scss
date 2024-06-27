@@ -1,0 +1,16 @@
+@import './PlaceCard.scss';
+
+
+.places-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: $background-color;
+    margin-top:100px;
+
+    .place-card {
+        flex: 1 1 calc(33.333% - 20px);
+        box-sizing: border-box;
+    }
+}

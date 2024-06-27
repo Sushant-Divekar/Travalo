@@ -1,0 +1,794 @@
+// .most-visited-places-container {
+//     position: relative;
+//     width: 90%;
+//     margin: 0 auto;
+//     overflow: hidden;
+  
+//     .places-slider {
+//       display: flex;
+//       transition: transform 0.5s ease-in-out;
+  
+//       .place {
+//         min-width: 25%; // Ensures that 4 places are visible at a time
+//         box-sizing: border-box;
+//         padding: 10px;
+//         background-color: #fff;
+//         border-radius: 10px;
+//         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//         text-align: center;
+//         transition: transform 0.3s ease;
+  
+//         &:hover {
+//           transform: translateY(-5px);
+//         }
+  
+//         img {
+//           width: 100%;
+//           height: 200px;
+//           object-fit: cover;
+//           border-radius: 10px;
+//         }
+  
+//         .place-name {
+//           font-family: 'Open Sans', sans-serif;
+//           font-size: 18px;
+//           font-weight: 600;
+//           color: #333;
+//           margin: 10px 0;
+//         }
+  
+//         .country-name {
+//           font-family: 'Open Sans', sans-serif;
+//           font-size: 16px;
+//           font-weight: 500;
+//           color: #666;
+//         }
+  
+//         .place-info-container {
+//           margin-top: 10px;
+  
+//           .price-info {
+//             font-family: 'Open Sans', sans-serif;
+//             font-size: 16px;
+//             font-weight: bold;
+//             color: #007bff;
+//             margin-bottom: 10px;
+//           }
+  
+//           .detail-button {
+//             font-family: 'Open Sans', sans-serif;
+//             font-size: 14px;
+//             font-weight: bold;
+//             color: #fff;
+//             background-color: #007bff;
+//             border: none;
+//             border-radius: 5px;
+//             padding: 10px 20px;
+//             cursor: pointer;
+//             transition: background-color 0.3s ease;
+  
+//             &:hover {
+//               background-color: #0056b3;
+//             }
+//           }
+//         }
+//       }
+//     }
+  
+//     .arrow {
+//       position: absolute;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       background-color: rgba(0, 0, 0, 0.5);
+//       color: #fff;
+//       border: none;
+//       border-radius: 50%;
+//       padding: 10px;
+//       cursor: pointer;
+//       z-index: 2;
+  
+//       &:hover {
+//         background-color: rgba(0, 0, 0, 0.7);
+//       }
+//     }
+  
+//     .left {
+//       left: 10px;
+//     }
+  
+//     .right {
+//       right: 10px;
+//     }
+//   }
+
+  
+// @media (max-width: 1024px) {
+
+//     .most-visited-places-container {
+//         position: relative;
+//         width: 90%;
+//         margin: 0 auto;
+//         overflow: hidden;
+      
+//         .places-slider {
+//           display: flex;
+//           transition: transform 0.5s ease-in-out;
+      
+//           .place {
+//             min-width: 25%; // Ensures that 4 places are visible at a time
+//             box-sizing: border-box;
+//             padding: 10px;
+//             background-color: #fff;
+//             border-radius: 10px;
+//             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//             text-align: center;
+//             transition: transform 0.3s ease;
+      
+//             &:hover {
+//               transform: translateY(-5px);
+//             }
+      
+//             img {
+//               width: 100%;
+//               height: 200px;
+//               object-fit: cover;
+//               border-radius: 10px;
+//             }
+      
+//             .place-name {
+//               font-family: 'Open Sans', sans-serif;
+//               font-size: 18px;
+//               font-weight: 600;
+//               color: #333;
+//               margin: 10px 0;
+//             }
+      
+//             .country-name {
+//               font-family: 'Open Sans', sans-serif;
+//               font-size: 16px;
+//               font-weight: 500;
+//               color: #666;
+//             }
+      
+//             .place-info-container {
+//               margin-top: 10px;
+      
+//               .price-info {
+//                 font-family: 'Open Sans', sans-serif;
+//                 font-size: 16px;
+//                 font-weight: bold;
+//                 color: #007bff;
+//                 margin-bottom: 10px;
+//               }
+      
+//               .detail-button {
+//                 font-family: 'Open Sans', sans-serif;
+//                 font-size: 14px;
+//                 font-weight: bold;
+//                 color: #fff;
+//                 background-color: #007bff;
+//                 border: none;
+//                 border-radius: 5px;
+//                 padding: 10px 20px;
+//                 cursor: pointer;
+//                 transition: background-color 0.3s ease;
+      
+//                 &:hover {
+//                   background-color: #0056b3;
+//                 }
+//               }
+//             }
+//           }
+//         }
+      
+//         .arrow {
+//           position: absolute;
+//           top: 50%;
+//           transform: translateY(-50%);
+//           background-color: rgba(0, 0, 0, 0.5);
+//           color: #fff;
+//           border: none;
+//           border-radius: 50%;
+//           padding: 10px;
+//           cursor: pointer;
+//           z-index: 2;
+      
+//           &:hover {
+//             background-color: rgba(0, 0, 0, 0.7);
+//           }
+//         }
+      
+//         .left {
+//           left: 10px;
+//         }
+      
+//         .right {
+//           right: 10px;
+//         }
+//     }
+
+// }
+
+// @media (max-width: 768px) {
+
+//     .most-visited-places-container {
+//         position: relative;
+//         width: 90%;
+//         margin: 0 auto;
+//         overflow: hidden;
+      
+//         .places-slider {
+//           display: flex;
+//           transition: transform 0.5s ease-in-out;
+      
+//           .place {
+//             min-width: 25%; // Ensures that 4 places are visible at a time
+//             box-sizing: border-box;
+//             padding: 10px;
+//             background-color: #fff;
+//             border-radius: 10px;
+//             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//             text-align: center;
+//             transition: transform 0.3s ease;
+      
+//             &:hover {
+//               transform: translateY(-5px);
+//             }
+      
+//             img {
+//               width: 100%;
+//               height: 200px;
+//               object-fit: cover;
+//               border-radius: 10px;
+//             }
+      
+//             .place-name {
+//               font-family: 'Open Sans', sans-serif;
+//               font-size: 18px;
+//               font-weight: 600;
+//               color: #333;
+//               margin: 10px 0;
+//             }
+      
+//             .country-name {
+//               font-family: 'Open Sans', sans-serif;
+//               font-size: 16px;
+//               font-weight: 500;
+//               color: #666;
+//             }
+      
+//             .place-info-container {
+//               margin-top: 10px;
+      
+//               .price-info {
+//                 font-family: 'Open Sans', sans-serif;
+//                 font-size: 16px;
+//                 font-weight: bold;
+//                 color: #007bff;
+//                 margin-bottom: 10px;
+//               }
+      
+//               .detail-button {
+//                 font-family: 'Open Sans', sans-serif;
+//                 font-size: 14px;
+//                 font-weight: bold;
+//                 color: #fff;
+//                 background-color: #007bff;
+//                 border: none;
+//                 border-radius: 5px;
+//                 padding: 10px 20px;
+//                 cursor: pointer;
+//                 transition: background-color 0.3s ease;
+      
+//                 &:hover {
+//                   background-color: #0056b3;
+//                 }
+//               }
+//             }
+//           }
+//         }
+      
+//         .arrow {
+//           position: absolute;
+//           top: 50%;
+//           transform: translateY(-50%);
+//           background-color: rgba(0, 0, 0, 0.5);
+//           color: #fff;
+//           border: none;
+//           border-radius: 50%;
+//           padding: 10px;
+//           cursor: pointer;
+//           z-index: 2;
+      
+//           &:hover {
+//             background-color: rgba(0, 0, 0, 0.7);
+//           }
+//         }
+      
+//         .left {
+//           left: 10px;
+//         }
+      
+//         .right {
+//           right: 10px;
+//         }
+//       }
+    
+// }
+
+
+//----------------
+
+// .most-visited-places-container {
+//     position: relative;
+//     width: 90%;
+//     margin: 0 auto;
+//     overflow: hidden;
+//     margin-top: 10px;
+//     background-color: rgb(224, 224, 255);
+//     padding: 20px;
+  
+//     .places-slider {
+//       display: flex;
+//       transition: transform 0.5s ease-in-out;
+//       column-gap: 20px;
+  
+//       .place {
+//         flex: 1 0 24%; // Default to 4 places per row
+//         box-sizing: border-box;
+//         padding: 10px;
+//         background-color: #fff;
+//         border-radius: 10px;
+//         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//         text-align: center;
+//         transition: transform 0.3s ease;
+//         &:hover {
+//           transform: translateY(-5px);
+//         }
+  
+//         img {
+//           width: 100%;
+//           height: 200px;
+//           object-fit: cover;
+//           border-radius: 10px;
+//         }
+  
+//         .place-name {
+//           font-family: 'Open Sans', sans-serif;
+//           font-size: 18px;
+//           font-weight: 600;
+//           color: #333;
+//           margin: 10px 0;
+//         }
+  
+//         .country-name {
+//           font-family: 'Open Sans', sans-serif;
+//           font-size: 16px;
+//           font-weight: 500;
+//           color: #666;
+//         }
+  
+//         .place-info-container {
+//           margin-top: 10px;
+  
+//           .price-info {
+//             font-family: 'Open Sans', sans-serif;
+//             font-size: 16px;
+//             font-weight: bold;
+//             color: #007bff;
+//             margin-bottom: 10px;
+//           }
+  
+//           .detail-button {
+//             font-family: 'Open Sans', sans-serif;
+//             font-size: 14px;
+//             font-weight: bold;
+//             color: #fff;
+//             background-color: #007bff;
+//             border: none;
+//             border-radius: 5px;
+//             padding: 10px 20px;
+//             cursor: pointer;
+//             transition: background-color 0.3s ease;
+  
+//             &:hover {
+//               background-color: #0056b3;
+//             }
+//           }
+//         }
+//       }
+//     }
+  
+//     .arrow {
+//       position: absolute;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       background-color: rgba(0, 0, 0, 0.5);
+//       color: #fff;
+//       border: none;
+//       border-radius: 50%;
+//       padding: 10px;
+//       cursor: pointer;
+//       z-index: 2;
+  
+//       &:hover {
+//         background-color: rgba(0, 0, 0, 0.7);
+//       }
+  
+//       &:disabled {
+//         cursor: not-allowed;
+//         opacity: 0.5;
+//       }
+//     }
+  
+//     .left {
+//       left: 10px;
+//     }
+  
+//     .right {
+//       right: 10px;
+//     }
+  
+//   }
+
+// @media (max-width: 1024px) {
+//   .most-visited-places-container {
+//     position: relative;
+//     width: 90%;
+//     margin: 0 auto;
+//     overflow: hidden;
+//     margin-top: 10px;
+//     background-color: rgb(224, 224, 255);
+//     padding: 20px;
+  
+//     .places-slider {
+//       display: flex;
+//       transition: transform 0.5s ease-in-out;
+//       column-gap: 20px;
+  
+//       .place {
+//         flex: 1 0 31%;  // Default to 4 places per row
+//         box-sizing: border-box;
+//         padding: 10px;
+//         background-color: #fff;
+//         border-radius: 10px;
+//         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//         text-align: center;
+//         transition: transform 0.3s ease;
+//         &:hover {
+//           transform: translateY(-5px);
+//         }
+  
+//         img {
+//           width: 100%;
+//           height: 200px;
+//           object-fit: cover;
+//           border-radius: 10px;
+//         }
+  
+//         .place-name {
+//           font-family: 'Open Sans', sans-serif;
+//           font-size: 18px;
+//           font-weight: 600;
+//           color: #333;
+//           margin: 10px 0;
+//         }
+  
+//         .country-name {
+//           font-family: 'Open Sans', sans-serif;
+//           font-size: 16px;
+//           font-weight: 500;
+//           color: #666;
+//         }
+  
+//         .place-info-container {
+//           margin-top: 10px;
+  
+//           .price-info {
+//             font-family: 'Open Sans', sans-serif;
+//             font-size: 16px;
+//             font-weight: bold;
+//             color: #007bff;
+//             margin-bottom: 10px;
+//           }
+  
+//           .detail-button {
+//             font-family: 'Open Sans', sans-serif;
+//             font-size: 14px;
+//             font-weight: bold;
+//             color: #fff;
+//             background-color: #007bff;
+//             border: none;
+//             border-radius: 5px;
+//             padding: 10px 20px;
+//             cursor: pointer;
+//             transition: background-color 0.3s ease;
+  
+//             &:hover {
+//               background-color: #0056b3;
+//             }
+//           }
+//         }
+//       }
+//     }
+  
+//     .arrow {
+//       position: absolute;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       background-color: rgba(0, 0, 0, 0.5);
+//       color: #fff;
+//       border: none;
+//       border-radius: 50%;
+//       padding: 10px;
+//       cursor: pointer;
+//       z-index: 2;
+  
+//       &:hover {
+//         background-color: rgba(0, 0, 0, 0.7);
+//       }
+  
+//       &:disabled {
+//         cursor: not-allowed;
+//         opacity: 0.5;
+//       }
+//     }
+  
+//     .left {
+//       left: 10px;
+//     }
+  
+//     .right {
+//       right: 10px;
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .most-visited-places-container {
+//     position: relative;
+//     width: 90%;
+//     margin: 0 auto;
+//     overflow: hidden;
+//     margin-top: 10px;
+//     background-color: rgb(224, 224, 255);
+//     padding: 20px;
+  
+//     .places-slider {
+//       display: flex;
+//       transition: transform 0.5s ease-in-out;
+//       column-gap: 20px;
+  
+//       .place {
+//         flex: 1 0 98%; // Default to 4 places per row
+//         box-sizing: border-box;
+//         padding: 10px;
+//         background-color: #fff;
+//         border-radius: 10px;
+//         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//         text-align: center;
+//         transition: transform 0.3s ease;
+//         &:hover {
+//           transform: translateY(-5px);
+//         }
+  
+//         img {
+//           width: 100%;
+//           height: 200px;
+//           object-fit: cover;
+//           border-radius: 10px;
+//         }
+  
+//         .place-name {
+//           font-family: 'Open Sans', sans-serif;
+//           font-size: 18px;
+//           font-weight: 600;
+//           color: #333;
+//           margin: 10px 0;
+//         }
+  
+//         .country-name {
+//           font-family: 'Open Sans', sans-serif;
+//           font-size: 16px;
+//           font-weight: 500;
+//           color: #666;
+//         }
+  
+//         .place-info-container {
+//           margin-top: 10px;
+  
+//           .price-info {
+//             font-family: 'Open Sans', sans-serif;
+//             font-size: 16px;
+//             font-weight: bold;
+//             color: #007bff;
+//             margin-bottom: 10px;
+//           }
+  
+//           .detail-button {
+//             font-family: 'Open Sans', sans-serif;
+//             font-size: 14px;
+//             font-weight: bold;
+//             color: #fff;
+//             background-color: #007bff;
+//             border: none;
+//             border-radius: 5px;
+//             padding: 10px 20px;
+//             cursor: pointer;
+//             transition: background-color 0.3s ease;
+  
+//             &:hover {
+//               background-color: #0056b3;
+//             }
+//           }
+//         }
+//       }
+//     }
+  
+//     .arrow {
+//       position: absolute;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       background-color: rgba(0, 0, 0, 0.5);
+//       color: #fff;
+//       border: none;
+//       border-radius: 50%;
+//       padding: 10px;
+//       cursor: pointer;
+//       z-index: 2;
+  
+//       &:hover {
+//         background-color: rgba(0, 0, 0, 0.7);
+//       }
+  
+//       &:disabled {
+//         cursor: not-allowed;
+//         opacity: 0.5;
+//       }
+//     }
+  
+//     .left {
+//       left: 10px;
+//     }
+  
+//     .right {
+//       right: 10px;
+//     }
+//   }
+// }
+
+
+.most-visited-places-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 10px;
+  //background-color: rgb(224, 224, 255);
+  padding: 20px;
+
+  .places-slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      column-gap: 20px;
+
+      .place {
+          flex: 0 0 calc(25% - 20px); // Default to 4 places per row with exact slots
+          box-sizing: border-box;
+          padding: 10px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+          text-align: center;
+          transition: transform 0.3s ease;
+
+          &:hover {
+              transform: translateY(-5px);
+          }
+
+          img {
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-radius: 10px;
+          }
+
+          .place-name {
+              font-family: 'Open Sans', sans-serif;
+              font-size: 18px;
+              font-weight: 600;
+              color: #333;
+              margin: 10px 0;
+          }
+
+          .country-name {
+              font-family: 'Open Sans', sans-serif;
+              font-size: 16px;
+              font-weight: 500;
+              color: #666;
+          }
+
+          .place-info-container {
+              margin-top: 10px;
+              display: flex;
+              justify-content: space-around;
+
+              .price-info {
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 16px;
+                  font-weight: bold;
+                  color: #007bff;
+                  margin-bottom: 10px;
+              }
+
+              .detail-button {
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: #fff;
+                  background-color: #007bff;
+                  border: none;
+                  border-radius: 5px;
+                  padding: 10px 20px;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+
+                  &:hover {
+                      background-color: #0056b3;
+                  }
+              }
+          }
+      }
+  }
+
+  .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+
+      &:hover {
+          background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      &:disabled {
+          cursor: not-allowed;
+          opacity: 0.5;
+      }
+  }
+
+  .left {
+      left: 10px;
+  }
+
+  .right {
+      right: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .most-visited-places-container {
+      .places-slider {
+          .place {
+              flex: 0 0 calc(33.33% - 20.33px); // 3 places per row with exact slots
+          }
+      }
+  }
+}
+
+@media (max-width: 768px) {
+  .most-visited-places-container {
+    width: 89%;
+      .places-slider {
+          .place {
+              flex: 0 0 calc(100% - 20px); // 1 place per row with exact slots
+          }
+      }
+  }
+}
